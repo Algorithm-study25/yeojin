@@ -34,5 +34,3 @@ bin/
 *.iml
 out
 gen
-.gradle
-build
