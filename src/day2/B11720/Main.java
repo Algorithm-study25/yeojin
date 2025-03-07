@@ -1,9 +1,11 @@
-import java.util.Scanner;
-
 /**
  * 2025-03-03
  * 백준 11720
  */
+package day2.B11720;
+
+import java.util.Scanner;
+
 ///TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
