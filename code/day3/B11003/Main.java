@@ -3,7 +3,7 @@
  *  문제010_백준 11003번
  * */
 package day3.B11003;
-
+/*
 import java.util.Scanner;
 
 public class Main {
@@ -46,5 +46,50 @@ public class Main {
             min = Math.min(min, partArray[i]);
         }
         return min;
+    }
+}
+*/
+import java.io.*;
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+        StringTokenizer st = new StringTokenizer(br.readLine());
+
+        int N = Integer.parseInt(st.nextToken()); // 슬라이딩 윈도우 크기
+        int L = Integer.parseInt(st.nextToken()); // 최솟값을 구하는 범위
+
+        st = new StringTokenizer(br.readLine());
+        Deque<Node> d = new ArrayDeque<>();
+
+        for (int i = 0; i < N; i++) {
+            int now = Integer.parseInt(st.nextToken());
+
+            while (!d.isEmpty() && d.getLast().value > now) {
+                d.removeLast();
+            }
+
+            d.addLast(new Node(now, i));
+
+            if (d.getFirst().index <= i - L) {
+                d.removeFirst();
+            }
+            bw.write(d.getFirst().value + " ");
+        }
+
+        bw.flush();
+        bw.close();
+    }
+
+    static class Node {
+        int value;
+        int index;
+
+        Node(int value, int index) {
+            this.value = value;
+            this.index = index;
+        }
     }
 }
