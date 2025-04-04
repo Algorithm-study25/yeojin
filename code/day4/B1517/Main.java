@@ -2,7 +2,7 @@ package day4.B1517;
 
 import java.io.*;
 import java.util.*;
-
+/*
 public class Main {
     //세그먼트 트리 구현할 배열
     static long[] tree;
@@ -85,5 +85,63 @@ public class Main {
     static int getTreeSize(int n) {
         int h = (int)Math.ceil(Math.log(n)/Math.log(2))+1;
         return (int)Math.pow(2, h)-1;
+    }
+}
+*/
+import java.io.*;
+
+public class Main {
+    static int[] A, tmp;
+    static long count = 0;
+
+    public static void main(String[] args) throws IOException {
+        // 입력
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        int N = Integer.parseInt(br.readLine());
+        A = new int[N];
+        tmp = new int[N];
+        String[] input = br.readLine().split(" ");
+        for (int i = 0; i < N; i++) {
+            A[i] = Integer.parseInt(input[i]);
+        }
+
+        // 병합 정렬
+        mergeSort(0, N - 1);
+
+        // 출력
+        System.out.println(count);
+    }
+
+    static void mergeSort(int start, int end) {
+        if (start >= end) return;
+        int mid = (start + end) / 2;
+        mergeSort(start, mid);
+        mergeSort(mid + 1, end);
+        merge(start, mid, end);
+    }
+
+    static void merge(int start, int mid, int end) {
+        int i = start;
+        int j = mid + 1;
+        int k = start;
+
+        while (i <= mid && j <= end) {
+            if (A[i] <= A[j]) {
+                tmp[k++] = A[i++];
+            } else {
+                tmp[k++] = A[j++];
+                // 역전쌍 발생: 왼쪽에 있는 i~mid까지 모두 A[j]보다 크다.
+                count += (mid - i + 1);
+            }
+        }
+
+        // 남은 값 복사해야해
+        while (i <= mid) tmp[k++] = A[i++];
+        while (j <= end) tmp[k++] = A[j++];
+
+        // tmp 를 a로 복사.
+        for (int t = start; t <= end; t++) {
+            A[t] = tmp[t];
+        }
     }
 }

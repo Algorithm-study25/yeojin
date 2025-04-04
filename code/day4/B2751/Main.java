@@ -30,6 +30,7 @@ public class Main {
 }
 */
 // min heap으로 풀기
+/*
 public class Main{
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -49,6 +50,20 @@ public class Main{
         while (!minHeap.isEmpty()) {
             bw.write(minHeap.poll() + "\n");
         }
+
+        br.close();
+        bw.flush();
+        bw.close();
+    }
+}
+*/
+// merge_sort로 풀기
+public class Main {
+    public static void main(String[] args) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+
+        int N = Integer.parseInt(br.readLine());
 
         br.close();
         bw.flush();
