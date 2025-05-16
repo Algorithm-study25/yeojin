@@ -72,19 +72,51 @@ public class Main{
 
     static int[] dx = {0, 0, 1, -1};
     static int[] dy = {1, -1, 0, 0};
+    static boolean[][] visited;
+    static int N;
+    static int M;
+    static int[][] map;
+
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st = new StringTokenizer(br.readLine());
 
-        int N = Integer.parseInt(st.nextToken());
-        int M = Integer.parseInt(st.nextToken());
+        N = Integer.parseInt(st.nextToken());
+        M = Integer.parseInt(st.nextToken());
+        map = new int[N][M];
 
         for(int i = 0; i < N; i++){
-            String line = st.nextToken();
+            String line = br.readLine();
             for(int j = 0; j < M; j++){
-
+                map[i][j] = line.charAt(j) - '0'; // 여기 이유가 중요!
             }
         }
+        bfs(0,0);
+        System.out.println(map[N-1][M-1]);
+    }
+    public static void bfs(int i, int j){
+        Queue<int[]> q = new LinkedList<>();
+        q.offer(new int[]{i, j});
+        visited[i][j] = true;
 
+        while(!q.isEmpty()){
+            int[] now = q.poll();
+            int newX = now[0];
+            int newY = now[1];
+
+            for(int k = 0; i < 4; i++){
+                int nx = newX + dx[i];
+                int ny = newY + dy[i];
+
+                if(ny < 0 || nx < 0 || nx >= N || ny >= M){
+                    continue;
+                }
+                if(map[nx][ny] != 0 && visited[nx][ny]){
+                    visited[nx][ny] = true;
+                    map[nx][ny] = map[newX][newY] + 1;
+                    q.offer(new int[]{nx, ny});
+                }
+            }
+        }
     }
 }
