@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2fd6aeac-59f4-4838-b188-9155f6d697d7" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +22,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;jnyn0314&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Algorithm-study25/yeojin.git&quot;,
+    &quot;accountId&quot;: &quot;4cd4421b-6566-4230-bbfe-831861615a7b&quot;
+  }
+}</component>
   <component name="KubernetesApiPersistence">{}</component>
   <component name="KubernetesApiProvider">{
   &quot;isMigrated&quot;: true
@@ -134,7 +146,9 @@
       <workItem from="1747369087004" duration="10036000" />
       <workItem from="1747380771808" duration="84000" />
       <workItem from="1747980756155" duration="1114000" />
-      <workItem from="1750389461796" duration="861000" />
+      <workItem from="1750389461796" duration="1727000" />
+      <workItem from="1750479108932" duration="365000" />
+      <workItem from="1750648011244" duration="1116000" />
     </task>
     <servers />
   </component>
