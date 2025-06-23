@@ -1,8 +1,11 @@
 package programmers.hash.P폰켓몬;
 
+import java.util.HashSet;
 import java.util.Map;
 import java.util.HashMap;
+import java.util.Set;
 
+/**
 class Solution {
     public int solution(int[] nums) {
 
@@ -28,7 +31,7 @@ class Solution {
     }
 }
 
-/**
+
  가장 다양하게 뽑을 수 있을 때, 그 갯수를 return
 
  [3 3 3 2 2 4] - 3
@@ -56,3 +59,17 @@ class Solution {
  map에서 (3,2),(1,1),(2,1)이 들어갈거고
  for문돌면서 i가 0부터 n/2까지 map.put()으로 빼오는데, 대신 count가 1인것부터 쭉 빼오고 만약 for문 다 돌기전에 map이 끝나면 count가 2인거 빼오고 1인거빼왓을떄 값을 return
  */
+
+// set으로 풀기
+class Solution{
+    public int solution(int[] nums) {
+        Set<Integer> set = new HashSet<Integer>();
+
+        for(int num : nums){
+            set.add(num);
+        }
+
+        return Math.min(set.size(), nums.length/2);
+
+    }
+}
