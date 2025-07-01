@@ -9,15 +9,17 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.*;
 
+// 문자열을 수로 변환할때 생기는 것이 numberformatException
+
 public class Main {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st = new StringTokenizer(br.readLine());
 
-        int N = Integer.parseInt(br.readLine());
-        int M = Integer.parseInt(br.readLine());
-        int K = Integer.parseInt(br.readLine());
-        int X = Integer.parseInt(br.readLine());
+        int N = Integer.parseInt(st.nextToken());
+        int M = Integer.parseInt(st.nextToken());
+        int K = Integer.parseInt(st.nextToken());
+        int X = Integer.parseInt(st.nextToken());
 
         List<List<Integer>> graph = new ArrayList<>();
         for(int i = 0; i <= N; i++){
