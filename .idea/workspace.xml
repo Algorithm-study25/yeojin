@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="2fd6aeac-59f4-4838-b188-9155f6d697d7" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/day8/B2252/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/day8/B2252/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -165,7 +164,10 @@
       <workItem from="1751601674266" duration="1577000" />
       <workItem from="1751605756207" duration="6881000" />
       <workItem from="1751636935769" duration="13000" />
-      <workItem from="1751854486475" duration="10311000" />
+      <workItem from="1751854486475" duration="10748000" />
+      <workItem from="1751895732111" duration="10000" />
+      <workItem from="1751957243372" duration="1517000" />
+      <workItem from="1752209452863" duration="5726000" />
     </task>
     <servers />
   </component>
@@ -217,6 +219,11 @@
           <url>file://$PROJECT_DIR$/code/day4/B1517/Info.java</url>
           <line>7</line>
           <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/code/day8/B1948/Main.java</url>
+          <line>103</line>
+          <option name="timeStamp" value="11" />
         </line-breakpoint>
         <breakpoint enabled="true" type="java-exception">
           <properties class="java.lang.ClassCastException" package="java.lang" />
