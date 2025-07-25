@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="2fd6aeac-59f4-4838-b188-9155f6d697d7" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/day8/B1948/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/day8/B1948/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -167,7 +168,14 @@
       <workItem from="1751854486475" duration="10748000" />
       <workItem from="1751895732111" duration="10000" />
       <workItem from="1751957243372" duration="1517000" />
-      <workItem from="1752209452863" duration="5726000" />
+      <workItem from="1752209452863" duration="10435000" />
+      <workItem from="1752295229995" duration="8000" />
+      <workItem from="1753161685873" duration="2027000" />
+      <workItem from="1753194049313" duration="1145000" />
+      <workItem from="1753234698414" duration="15000" />
+      <workItem from="1753342693853" duration="4183000" />
+      <workItem from="1753356715969" duration="37000" />
+      <workItem from="1753417705457" duration="4479000" />
     </task>
     <servers />
   </component>
@@ -222,7 +230,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/code/day8/B1948/Main.java</url>
-          <line>103</line>
+          <line>102</line>
           <option name="timeStamp" value="11" />
         </line-breakpoint>
         <breakpoint enabled="true" type="java-exception">

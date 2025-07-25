@@ -46,7 +46,6 @@ public class Main {
         int start = Integer.parseInt(st.nextToken());
         int end = Integer.parseInt(st.nextToken());
 
-
         Queue<Integer> queue = new LinkedList<>();
         queue.offer(start);
 
