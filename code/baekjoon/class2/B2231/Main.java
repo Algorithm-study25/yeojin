@@ -13,7 +13,12 @@ public class Main {
     public static void main(String[] args) throws IOException{
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
-        int N = Integer.parseInt(br.readLine()); // 216
+        // int N = Integer.parseInt(br.readLine()); // 216
+
+        String N = br.readLine();
+        int length = N.length();
+        int n = Integer.parseInt(N);
+
 //        int result = 0;
 //
 //        for(int i = 0; i < N; i++){ // i 가 1부터 216까지
@@ -33,7 +38,7 @@ public class Main {
 //        }
 //        System.out.println(result);
 
-        int rslt = find(N);
+        int rslt = find(n, length);
         System.out.println(rslt);
 
         br.close();
@@ -42,8 +47,10 @@ public class Main {
     /*
     생성자를 확인하는 함수
     * */
-    public static int find(int n){
-        for(int i = 0; i < n; i++){
+    public static int find(int n, int length){
+
+        // for(int i = 0; i < n; i++){
+        for(int i = (n - (length * 9)); i < n; i++){
             int sum = 0; // 198같은거
             int num = i;
 
