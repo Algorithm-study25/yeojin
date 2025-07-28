@@ -14,27 +14,49 @@ public class Main {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
         int N = Integer.parseInt(br.readLine()); // 216
-        int result = 0;
+//        int result = 0;
+//
+//        for(int i = 0; i < N; i++){ // i 가 1부터 216까지
+//            int sum = i;
+//            int number = i;
+//
+//            while(number != 0){
+//                sum = sum + i % 10; // sum = 0 + 1
+//                number = number / 10; // num = 0;
+//            }
+//
+//            if(sum == N){ // 1 + 원래수 i == N
+//                result = i;
+//                break;
+//            }
+//
+//        }
+//        System.out.println(result);
 
-        for(int i = 0; i < N; i++){ // i 가 1부터 216까지
-            int sum = 0;
-            int number = i;
+        int rslt = find(N);
+        System.out.println(rslt);
 
-            while(i != 0){
-                sum = sum + i % 10; // sum = 0 + 1
-                number = number / 10; // num = 0;
+        br.close();
+    }
+
+    /*
+    생성자를 확인하는 함수
+    * */
+    public static int find(int n){
+        for(int i = 0; i < n; i++){
+            int sum = 0; // 198같은거
+            int num = i;
+
+            while(num != 0){
+                sum = sum + num % 10;
+                num /= 10;
             }
 
-            if(sum + i == N){ // 1 + 원래수 i == N
-                result = i;
-                break;
+            if(sum + i == n){
+                return i;
             }
-
         }
-
-        System.out.println(result);
-
-        br.readLine();
+        return 0;
     }
 }
 /*
