@@ -23,26 +23,48 @@ public class Main {
             card[i] = Integer.parseInt(st.nextToken());
         }
 
-        int closeToM = 0;
+        // 이렇게 무식하게 말고 다른 좋은 방법?
+//        int closeToM = 0;
+//
+//        for(int i = 0; i < N - 2; i++){
+//            for(int j = i + 1; j < N - 1; j++){
+//                for(int k = j + 1; k < N; k++){
+//
+//                    if(card[i] + card[j] + card[k] - M < 0 && card[i] + card[j] + card[k] - M > closeToM - M){
+//                        closeToM = card[i] + card[j] + card[k];
+//                    }else if(card[i] + card[j] + card[k] - M < closeToM - M || card[i] + card[j] + card[k] - M > 0){
+//                    }else{ // 같은 경우. M과
+//                        closeToM = card[i] + card[j] + card[k];
+//                        break;
+//                    }
+//                }
+//            }
+//        }
+//
+//        System.out.println(closeToM);
 
-        for(int i = 0; i < N - 2; i++){
-            for(int j = i + 1; j < N - 1; j++){
-                for(int k = j + 1; k < N; k++){
+// 아 이거 어쩔수없이 삼중 for문이 필요하긴하네..
 
-                    if(card[i] + card[j] + card[k] - M < 0 && card[i] + card[j] + card[k] - M > closeToM - M){
-                        closeToM = card[i] + card[j] + card[k];
-                    }else if(card[i] + card[j] + card[k] - M < closeToM - M || card[i] + card[j] + card[k] - M > 0){
-                    }else{ // 같은 경우. M과
-                        closeToM = card[i] + card[j] + card[k];
-                        break;
-                    }
-                }
-            }
-        }
-
-        System.out.println(closeToM);
+        System.out.println(search(card,N,M));
 
         br.close();
+    }
+    public static int search(int[] card, int N, int M){
+        int result = 0;
+        for(int i = 0; i < N - 2; i++){
+            for(int j = i + 1; j < N - 1; j++){
+                for(int k = j + 1; k < N; k++) {
+                    int temp = card[i] + card[j] + card[k];
+                    if(temp == M) // M과 같으면 temp 리턴
+                        return temp;
+
+                    if(result < temp && temp < M) // 더한 값이 result보다 크고 M보다 작으면
+                        result = temp; // 여기가 나랑 달라. 아 그냥 간단하게.. 맞네...
+                }
+
+            }
+        } return result;
+
     }
 }
 /**
