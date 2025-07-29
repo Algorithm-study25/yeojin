@@ -52,28 +52,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;Application.day4.B1377.Main.executor&quot;: &quot;Run&quot;,
-    &quot;Application.day5.B12023.Main.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/study_2025/4-1/forpractice&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;D:/study_2025/codingtest/src/Main.java&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.completion&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "Application.baekjoon.class2.B2292.Main.executor": "Run",
+    "Application.baekjoon.class2.B2798.Main.executor": "Run",
+    "Application.day4.B1377.Main.executor": "Run",
+    "Application.day5.B12023.Main.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/study_2025/4-1/forpractice",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "D:/study_2025/codingtest/src/Main.java",
+    "settings.editor.selected.configurable": "editor.preferences.completion",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
-  <component name="RunManager" selected="Application.baekjoon.class2.B2292.Main">
+}]]></component>
+  <component name="RunManager" selected="Application.baekjoon.class2.B2798.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="day4.B11399.Main" />
       <module name="codingtest" />
@@ -93,6 +95,19 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="baekjoon.class2.B2292.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="baekjoon.class2.B2798.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="baekjoon.class2.B2798.Main" />
+      <module name="codingtest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="baekjoon.class2.B2798.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -128,6 +143,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.baekjoon.class2.B2798.Main" />
         <item itemvalue="Application.baekjoon.class2.B2292.Main" />
         <item itemvalue="Application.day5.B12023.Main" />
         <item itemvalue="Application.Main" />
@@ -193,7 +209,9 @@
       <workItem from="1753538561080" duration="1563000" />
       <workItem from="1753617710831" duration="34000" />
       <workItem from="1753626448007" duration="2693000" />
-      <workItem from="1753660416572" duration="6116000" />
+      <workItem from="1753660416572" duration="7829000" />
+      <workItem from="1753708565679" duration="6000" />
+      <workItem from="1753774101795" duration="2786000" />
     </task>
     <servers />
   </component>
