@@ -57,6 +57,7 @@
     "Application.Main.executor": "Run",
     "Application.baekjoon.class2.B1436.Main.executor": "Run",
     "Application.baekjoon.class2.B15829.Main.executor": "Run",
+    "Application.baekjoon.class2.B1676.Main.executor": "Run",
     "Application.baekjoon.class2.B2292.Main.executor": "Run",
     "Application.baekjoon.class2.B2798.Main.executor": "Run",
     "Application.day4.B1377.Main.executor": "Run",
@@ -220,7 +221,7 @@
       <workItem from="1753708565679" duration="6000" />
       <workItem from="1753774101795" duration="4595000" />
       <workItem from="1753800249839" duration="26000" />
-      <workItem from="1754630337437" duration="7339000" />
+      <workItem from="1754630337437" duration="8419000" />
     </task>
     <servers />
   </component>
