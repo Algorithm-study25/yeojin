@@ -6,8 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="2fd6aeac-59f4-4838-b188-9155f6d697d7" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/baekjoon/class2/B15829/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/baekjoon/class2/B15829/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/day8/B1414/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/day8/B1414/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,6 +55,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.Main.executor": "Run",
+    "Application.baekjoon.class2.B1436.Main.executor": "Run",
     "Application.baekjoon.class2.B15829.Main.executor": "Run",
     "Application.baekjoon.class2.B2292.Main.executor": "Run",
     "Application.baekjoon.class2.B2798.Main.executor": "Run",
@@ -221,7 +220,7 @@
       <workItem from="1753708565679" duration="6000" />
       <workItem from="1753774101795" duration="4595000" />
       <workItem from="1753800249839" duration="26000" />
-      <workItem from="1754630337437" duration="3556000" />
+      <workItem from="1754630337437" duration="7339000" />
     </task>
     <servers />
   </component>
