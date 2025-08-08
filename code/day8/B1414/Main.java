@@ -51,7 +51,9 @@ public class Main {
 
         Collections.sort(edges);
         parent = new int[N];
-        for (int i = 0; i < N; i++) parent[i] = i;
+        for (int i = 0; i < N; i++) {
+            parent[i] = i;
+        }
 
         int mst = 0;
         int count = 0;
