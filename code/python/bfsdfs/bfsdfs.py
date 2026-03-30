@@ -14,10 +14,6 @@ def dfs(graph, v, visited):
         if not visited[i]:
             dfs(graph, i, visited)
 
-    for i in graph[v]:
-        if not visited[i]:
-            dfs(graph, i, visited)
-
 from collections import deque
 
 def bfs(graph, start, visited):
@@ -44,3 +40,10 @@ def bfs(graph, start, visited):
             if not visited[i]:
                 queue.append(i)
                 visited[i] = True
+
+
+# bfs에서 deque쓰는이유
+# fifo, 먼저 들어온 게 먼저 나감
+# queue = deque([start])
+# while queue:
+# v = queue.popleft()

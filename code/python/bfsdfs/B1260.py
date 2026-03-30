@@ -62,4 +62,21 @@ for i in range(N+1):
     graph.sort()
 
 def dfs(graph, v, visited):
-    
+    visited[v] = True
+
+    for i in graph[v]:
+        if not visited[i]:
+            dfs(graph, i, visited)
+
+
+def bfs(graph, start, visited):
+    queue = deque([start])
+    # 이거 deque냐면, queue에서 앞에서 빼는 건 popleft()
+    # 뒤에 넣는건 append()
+    # [start]는 리스트 초기화하는거
+    # 즉, queue = deque([start])는 start를 처음으로 넣은 큐 생성
+    # v = queue.popleft() -> start 꺼냄
+    # queue.append(다음노드)
+
+    queue = deque() # 초기화 후, 밑에서 값 넣기
+    queue.append(start) # 이거랑 같은
