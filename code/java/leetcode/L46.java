@@ -12,6 +12,30 @@ class Solution {
         
         return list;
     }
+    void dfs(int[] nums, List<Integer> temp, List<List<Integer>> list){
+        if(temp.size() == nums.length){
+            list.add(new ArrayList<>(temp));
+            return;
+        }
+
+        for(int i = 0; i < nums.length; i++){
+            if(visited[i]){
+                continue;
+            }
+
+            // 1. 선택
+            visited[i] = true;
+            temp.add(nums[i]);
+
+            // 2. 다음 단계로 이동
+            dfs(nums, temp, list);
+
+            // 3. 원상복구 (백트랙킹이니까)
+            temp.remove(temp.size()-1);
+            visited[i] = false;
+        }
+    }
+
     /* 
     순열 문제에서 dfs에서 now를 쓰지 않는 이유
     "현재 몇 개의 숫자를 골랐는가? 가 더 중요하기 때문"
@@ -45,27 +69,4 @@ class Solution {
         }
     }
     */
-    void dfs(int[] nums, List<Integer> temp, List<List<Integer>> list){
-        if(temp.size() == nums.length){
-            list.add(new ArrayList<>(temp));
-            return;
-        }
-
-        for(int i = 0; i < nums.length; i++){
-            if(visited[i]){
-                continue;
-            }
-
-            // 1. 선택
-            visited[i] = true;
-            temp.add(nums[i]);
-
-            // 2. 다음 단계로 이동
-            dfs(nums, temp, list);
-
-            // 3. 원상복구 (백트랙킹이니까)
-            temp.remove(temp.size()-1);
-            visited[i] = false;
-        }
-    }
 }
