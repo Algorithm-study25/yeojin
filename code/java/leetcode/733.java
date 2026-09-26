@@ -28,3 +28,27 @@ public class 733 {
         dfs(image, r, c+1, color, visited, originalColor);
     }
 }
+
+public class 733 {
+    public int[][] floodFill(int[][] image, int sr, int sc, int color) {
+        boolean[][] visited = new boolean[image.length][image[0].length];
+
+        int originalColor = image[sr][sc];
+
+        dfs()
+    }
+    private void dfs(int[][] image, int sr, int sc, int color, int originalColor){
+        
+        if(visited[sr][sc]){
+            return;
+        }
+        
+        if(image[sr][sc] != originalColor){
+            return;
+        }
+        image[sr][sc] = color;
+        visited[sr][sc] = true;
+
+        dfs(image, sr - 1, sc, color, originalColor);
+    }
+}
